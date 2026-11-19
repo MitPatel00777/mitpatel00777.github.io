@@ -84,6 +84,42 @@
       margin-bottom: 2rem;
     }
 
+    .hero-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 420px;
+    }
+
+    .avatar {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      flex-shrink: 0;
+    }
+
+    .gif-showcase {
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .gif-showcase img {
+      display: block;
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+    }
+
     .badge {
       display: inline-block;
       background: #eff6ff;
@@ -193,12 +229,23 @@
 
   <main>
     <div id="home" class="hero">
-      <span class="badge">Software Developer</span>
-      <h1>Hi, I'm Mit Patel</h1>
-      <p>
-        I build web, mobile, and database-driven applications with clean structure and practical problem-solving.
-      </p>
-      <a class="btn" href="#projects">View Projects</a>
+      <div class="hero-top">
+        <div class="hero-text">
+          <span class="badge">Software Developer</span>
+          <h1>Hi, I'm Mit Patel</h1>
+          <p>
+            I build web, mobile, and database-driven applications with clean structure and practical problem-solving.
+          </p>
+          <a class="btn" href="#projects">View Projects</a>
+        </div>
+       
+        <img class="avatar" src="IMG_8925.jpeg" alt="Mit Patel profile picture" />
+      </div>
+
+      <div class="gif-showcase">
+       
+        <img src="zoro-one-piece.gif" alt="Animated developer banner" />
+      </div>
     </div>
 
     <section id="about">
@@ -210,7 +257,7 @@
 
     <section id="education">
       <h2>Education</h2>
-      <p><strong>Computer Science & Technology</strong> — College Lasalle (2025-2027)</p>
+      <p><strong>Computer Science &amp; Technology</strong> — College Lasalle (2025-2027)</p>
       
     </section>
 

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mit Patel — Developer Portfolio</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    .skills-list li {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      background: var(--bg);
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1.1rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="#home">Mit Patel</a>
+      <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="home" class="hero">
+      <span class="badge">Software Developer</span>
+      <h1>Hi, I'm Mit Patel</h1>
+      <p>
+        I build web, mobile, and database-driven applications with clean structure and practical problem-solving.
+      </p>
+      <a class="btn" href="#projects">View Projects</a>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+       I am a software development student in Montreal focused on turning ideas into clean, practical web and mobile applications. I enjoy building responsive front-end interfaces, database-backed web apps, and native mobile tools using technologies like Swift, SwiftUI, Java, C#, and SQL. I am looking for entry-level developer roles, internships, or collaborative project opportunities where I can keep learning and ship reliable software.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Computer Science & Technology</strong> — College Lasalle (2025-2027)</p>
+      
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 &amp; CSS3</li>
+        <li>JavaScript</li>
+        <li>C# / ASP.NET</li>
+        <li>SQL</li>
+        <li>Swift / SwiftUI</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><strong>Mobile &amp; Web Application Developer (Academic Team Projects)</strong> — Software Development Program (2025 – Present)</p>
+      <p>Collaborated in agile student teams to design, build, and debug mobile and database-driven web applications across Android, iOS, and web stacks. Coordinated feature development, tested application flows, and resolved environment and integration issues alongside teammates.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>Used Book Exchange &amp; Marketplace</p>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Android mobile app built in Android Studio with Java and XML in a team with Aldo, Joyce, and Romain. Features user accounts, book listings, genre classification, transaction tracking, and a Borrowed / Lent quick toggle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mitp39403@gmail.com">mitp39403@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></p>
+      <p>GitHub: <a href="https://github.com/MitPatel00777" target="_blank" rel="noopener">github.com/MitPatel00777</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mit Patel. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
